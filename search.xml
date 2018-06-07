@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[排序算法]]></title>
+    <url>%2F2018%2F06%2F07%2F%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[排序 定义： 排序是计算机内经常进行的一种操作，其目的是将一组“无序”的记录序列调整为“有序”的记录序列 分类： 根据排序时候所占存储器不同，可分为内部排序和外部排序 内部排序：整个排序完全在内存中进行 外部排序：由于数量过大，内存无法容纳全部数据，排序需要借助外部存储设备完成 排序算法的评估 稳定性： 待排序的序列中有两个或两个以上相同的关键字，在排序前和排序后，关键字顺序未发生变化则排序方法是稳定的，反之则排序方法是不稳定的 证明一个排序方法是稳定的，要通过算法本身的步骤进行证明；证明排序方法是不稳定的，只需举出一个反例即可 例子：待排序序列{R1, R2,… , Ri, …, Rj, …, Rk …, Rn}中存在三个关键字Ri=Rj=Rk（下标i&lt;j&lt;k），排序之后若Ri, Rj, Rk前后顺序未发生改变则使用的排序方法是稳定的，反之则使用的排序方法是不稳定的 时间复杂度： 简单的说就是描述该算法的运行时间，肯定不可能每次去跑一遍程序比较，于是就有了用语句频度来估算的方式 第一步我们需要知道什么是语句频度T(n) ：程序运行过程中语句执行的次数 123456for (int i = 0; i &lt; n; i++) &#123; a += 1; //T1(n) = n for (int j = 0; j &lt; 2n; j++) &#123; sum += a; //T2(n) = n * 2n &#125;&#125; 在上面的例子中,语句频度 T(n) = T1(n) + T2(n) = 2 n^2 + n* 第二步计算辅助函数 f(n)：使得当n趋近于无穷大时，T(n)/f(n)的极限值为不等于零的常数，则称f(n)是T(n)的同数量级函数，记为 T(n) = O(f(n))一般去除 T(n) = 2 n^2 + n 中的 低阶项和 首项系数可得到 f(n) = n^2* 最后 O(f(n)) = O(n^2) 获得渐进时间复杂度, 简称时间复杂度 常用的时间复杂度有：O(1) &lt; O(log n) &lt; 0(n) &lt; O(n log n) &lt; O(n^2) &lt; O(2^n) &lt; O(n!) 空间复杂度： 是对一个算法在运行过程中临时占用(辅助)存储空间大小的量度，记做S(n)=O(f(n)),与问题规模无关空间复杂度的计算与时间复杂度相似，时间复杂度使用的是语句频度，空间复杂度使用的是辅助空间的大小例如交换排序中常使用一个变量temp作为中间变量，空间复杂度为S(1) 1234567for (int j = 0; j &lt; n; j++) &#123; if (arr[i] &gt; arr[j]) &#123; int temp = arr[i]; arr[i] = arr[j]; arr[j] = temp; &#125;&#125; 一般而言，时间和空间复杂度是可以进行一定的相互转换， 递归时间复杂度：递归总次数 * 每次递归的次数空间复杂度：递归的深度 * 每次递归所需要的辅助空间]]></content>
+      <categories>
+        <category>Algorithm</category>
+        <category>sort</category>
+      </categories>
+      <tags>
+        <tag>sort</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo]]></title>
+    <url>%2F2018%2F06%2F07%2FHexo%2F</url>
+    <content type="text"><![CDATA[Hexo 一直想试试用hexo来写博客，前不久有看到别人的，决定安装个试试 Hexo是什么？ &nbsp;&nbsp;&nbsp;&nbsp;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 ——官网 安装前提（至于安装和使用不做详解） Node.js 中文社区下载 Git 官网下载 Hexo安装（以Windows为例） 进入cmd命令行（路径无所谓）输入: npm install -g hexo-cli 初始化文件夹，下载需要的文件（特定的文件夹，最好是空的）： 123hexo init &lt;folder&gt;cd &lt;folder&gt;npm install 启动服务器(必须在init的folder路径下)：hexo s 在浏览器中访问：http://localhost:4000]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Strat my blog]]></title>
+    <url>%2F2018%2F05%2F28%2Farticle-title%2F</url>
+    <content type="text"><![CDATA[Just want to do something…]]></content>
+      <categories>
+        <category>日记</category>
+      </categories>
+      <tags>
+        <tag>日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F05%2F28%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
