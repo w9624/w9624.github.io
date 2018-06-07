@@ -4,23 +4,8 @@
 
     
   <url>
-    <loc>http://yoursite.com/2018/06/07/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2018-06-07T11:42:13.053Z</lastmod>
-    <data>
-        <display>
-        <title>排序算法</title>
-        <pubTime>2018-06-07T11:39:09.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://yoursite.com/2018/06/07/Hexo/</loc>
-    <lastmod>2018-06-07T11:36:56.056Z</lastmod>
+    <lastmod>2018-06-07T11:48:22.424Z</lastmod>
     <data>
         <display>
         <title>Hexo</title>
@@ -32,6 +17,29 @@
            
              
               <breadCrumb title="Hexo" url="http://yoursite.com/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2018/06/07/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2018-06-07T11:47:30.326Z</lastmod>
+    <data>
+        <display>
+        <title>排序算法</title>
+        <pubTime>2018-06-07T11:39:00.000Z</pubTime>
+        
+        <tag>sort</tag>
+         
+         
+           
+             
+              <breadCrumb title="sort" url="http://yoursite.com/categories/sort/"/>
+          
+             
+              <breadCrumb title="Algorithm" url="http://yoursite.com/categories/sort/Algorithm/"/>
           
         </display>
     </data>
