@@ -123,18 +123,20 @@
 
 
 
-<meta name="description" content="排序   定义： 排序是计算机内经常进行的一种操作，其目的是将一组“无序”的记录序列调整为“有序”的记录序列  分类： 根据排序时候所占存储器不同，可分为内部排序和外部排序  内部排序：整个排序完全在内存中进行 外部排序：由于数量过大，内存无法容纳全部数据，排序需要借助外部存储设备完成    排序算法的评估   稳定性： 待排序的序列中有两个或两个以上相同的关键字，在排序前和排序后，关键字顺序未发">
+<meta name="description" content="交换排序：冒泡排序交换排序：通过以系列交换逆序元素进行排序的方法，包括冒泡排序和快速排序 冒泡排序 定义：冒泡排序是通过对 相邻元素 进行交换，逐步将待排序序列变成有序序列的过程   排序步骤：给一个数字序列升序排列：48，33，32，55，84，9，33，40   在第一趟冒泡排序中，从第一个记录开始，扫描整个序列，相邻数字为为降序则互换位置48，33，32，55，84，9，33，40 //48">
 <meta name="keywords" content="sort">
 <meta property="og:type" content="article">
-<meta property="og:title" content="排序算法">
-<meta property="og:url" content="http://yoursite.com/2018/06/07/排序算法/index.html">
+<meta property="og:title" content="冒泡排序">
+<meta property="og:url" content="http://yoursite.com/2018/06/11/冒泡排序/index.html">
 <meta property="og:site_name" content="残喘的理想">
-<meta property="og:description" content="排序   定义： 排序是计算机内经常进行的一种操作，其目的是将一组“无序”的记录序列调整为“有序”的记录序列  分类： 根据排序时候所占存储器不同，可分为内部排序和外部排序  内部排序：整个排序完全在内存中进行 外部排序：由于数量过大，内存无法容纳全部数据，排序需要借助外部存储设备完成    排序算法的评估   稳定性： 待排序的序列中有两个或两个以上相同的关键字，在排序前和排序后，关键字顺序未发">
+<meta property="og:description" content="交换排序：冒泡排序交换排序：通过以系列交换逆序元素进行排序的方法，包括冒泡排序和快速排序 冒泡排序 定义：冒泡排序是通过对 相邻元素 进行交换，逐步将待排序序列变成有序序列的过程   排序步骤：给一个数字序列升序排列：48，33，32，55，84，9，33，40   在第一趟冒泡排序中，从第一个记录开始，扫描整个序列，相邻数字为为降序则互换位置48，33，32，55，84，9，33，40 //48">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-07T14:34:18.209Z">
+<meta property="og:image" content="http://yoursite.com/2018/06/11/image/公式.png">
+<meta property="og:updated_time" content="2018-06-11T13:02:45.317Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="排序算法">
-<meta name="twitter:description" content="排序   定义： 排序是计算机内经常进行的一种操作，其目的是将一组“无序”的记录序列调整为“有序”的记录序列  分类： 根据排序时候所占存储器不同，可分为内部排序和外部排序  内部排序：整个排序完全在内存中进行 外部排序：由于数量过大，内存无法容纳全部数据，排序需要借助外部存储设备完成    排序算法的评估   稳定性： 待排序的序列中有两个或两个以上相同的关键字，在排序前和排序后，关键字顺序未发">
+<meta name="twitter:title" content="冒泡排序">
+<meta name="twitter:description" content="交换排序：冒泡排序交换排序：通过以系列交换逆序元素进行排序的方法，包括冒泡排序和快速排序 冒泡排序 定义：冒泡排序是通过对 相邻元素 进行交换，逐步将待排序序列变成有序序列的过程   排序步骤：给一个数字序列升序排列：48，33，32，55，84，9，33，40   在第一趟冒泡排序中，从第一个记录开始，扫描整个序列，相邻数字为为降序则互换位置48，33，32，55，84，9，33，40 //48">
+<meta name="twitter:image" content="http://yoursite.com/2018/06/11/image/公式.png">
 
 
 
@@ -164,13 +166,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/06/07/排序算法/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/11/冒泡排序/"/>
 
 
 
 
 
-  <title>排序算法 | 残喘的理想</title>
+  <title>冒泡排序 | 残喘的理想</title>
   
 
 
@@ -337,7 +339,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/07/排序算法/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/11/冒泡排序/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="wangrz">
@@ -354,7 +356,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">排序算法</h1>
+          <h1 class="post-title" itemprop="name headline">冒泡排序</h1>
         
 
         <div class="post-meta">
@@ -366,8 +368,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-07T19:39:00+08:00">
-                2018-06-07
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-11T18:29:00+08:00">
+                2018-06-11
               </time>
             
 
@@ -437,46 +439,35 @@
       
 
       
-        <h5>排序</h5>
-
-<ol>
-<li><p><strong>定义：</strong> 排序是计算机内经常进行的一种操作，其目的是将一组“无序”的记录序列调整为“有序”的记录序列</p>
-</li>
-<li><p><strong>分类：</strong> 根据排序时候所占存储器不同，可分为内部排序和外部排序</p>
-<ul>
-<li>内部排序：整个排序完全在内存中进行</li>
-<li>外部排序：由于数量过大，内存无法容纳全部数据，排序需要借助外部存储设备完成</li>
-</ul>
-</li>
+        <h5 id="交换排序：冒泡排序"><a href="#交换排序：冒泡排序" class="headerlink" title="交换排序：冒泡排序"></a>交换排序：冒泡排序</h5><p><strong>交换排序：</strong>通过以系列交换逆序元素进行排序的方法，包括冒泡排序和快速排序</p>
+<h6 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h6><ol>
+<li><strong>定义：</strong>冒泡排序是通过对 <strong>相邻元素</strong> 进行交换，逐步将待排序序列变成有序序列的过程  </li>
+<li><strong>排序步骤</strong>：给一个数字序列<strong>升序</strong>排列：48，33，32，55，84，9，33，40  <ol>
+<li>在第一趟冒泡排序中，从第一个记录开始，扫描整个序列，相邻数字为为<strong>降序</strong>则互换位置<br><u><strong>48，33</strong>，32，55，84，9，33，40</u> //48&gt;33，交换<br>33，<strong>48，32</strong>，55，84，9，33，40 //48&gt;32，交换<br>33，32，<strong>48，55</strong>，84，9，33，40 //48&lt;55, 不交换<br>33，32，48，<strong>55，84</strong>，9，33，40   ······<br>33，32，48，55，<strong>84，9，</strong>33，40<br>33，32，48，55，9，<strong>84，33</strong>，40<br>33，32，48，55，9，33，<strong>84，40</strong><br>33，32，48，55，9，33，40，84<br>在第一次冒泡结束之后，将最大值84放置在末尾  </li>
+<li>第二次冒泡排序中，对前7数字个进行同样操作<br><u>33，32，48，9，33，40，55</u>，84<br>在第二次冒泡结束之后，将第二大数55放置在倒数第二个位置 <br></li>
+<li>第三次序中，对前6字个进行同样操作<br><u>33，32，48，9，33，40</u>，55，84<br>在第三结束之后，将第三大的数48放置在倒数第三个位置</li>
+<li>由此可以得出，反复进行7次之后得到升序序列<br>9, 32, 33, 33, 40, 48, 55, 84</li>
 </ol>
-<h6>排序算法的评估</h6>
-
-<ol start="3">
-<li><p><strong>稳定性：</strong> 待排序的序列中有两个或两个以上相同的关键字，在排序前和排序后，关键字顺序未发生变化则排序方法是稳定的，反之则排序方法是不稳定的</p>
-<ul>
-<li>证明一个排序方法是稳定的，要通过算法本身的步骤进行证明；证明排序方法是不稳定的，只需举出一个反例即可</li>
-<li>例子：待排序序列{R1, R2,… , Ri, …, Rj, …, Rk …, Rn}中存在三个关键字Ri=Rj=Rk（下标i&lt;j&lt;k），排序之后若Ri, Rj, Rk前后顺序未发生改变则使用的排序方法是稳定的，反之则使用的排序方法是不稳定的 </li>
-</ul>
 </li>
-<li><p><strong>时间复杂度：</strong> 简单的说就是描述该算法的运行时间，肯定不可能每次去跑一遍程序比较，于是就有了用语句频度来估算的方式  </p>
+<li><p><strong>算法实现</strong>  </p>
 <ol>
-<li><p>第一步我们需要知道什么是<strong>语句频度T(n)</strong> ：程序运行过程中语句执行的次数</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span>  i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">    a += <span class="number">1</span>;                         <span class="comment">//T1(n) = n</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">2</span>n; j++) &#123;</span><br><span class="line">        sum += a;                   <span class="comment">//T2(n) = n * 2n</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>在上面的例子中,语句频度 <em>T(n) = T1(n) + T2(n) = 2 </em> n^2 + n*</p>
+<li><p>简单冒泡排序   </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 简单冒泡排序</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> arr</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">bobble</span><span class="params">(<span class="keyword">int</span>[] arr)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length - <span class="number">2</span>; i++) &#123; <span class="comment">// 执行n - 1次</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; arr.length - i - <span class="number">1</span>; j++) &#123; <span class="comment">// 执行n - i次</span></span><br><span class="line">			<span class="keyword">if</span> (arr[j] &gt; arr[j + <span class="number">1</span>]) &#123;</span><br><span class="line">				<span class="keyword">int</span> k = arr[j];</span><br><span class="line">				arr[j] = arr[j + <span class="number">1</span>];</span><br><span class="line">				arr[j + <span class="number">1</span>] = k;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>第二步计算<strong>辅助函数</strong> <em>f(n)</em>：使得当n趋近于无穷大时，<em>T(n)/f(n)</em>的极限值为不等于零的常数，则称f(n)是T(n)的同数量级函数，记为 <em>T(n) = O(f(n))</em><br><br>一般去除 <em>T(n) = 2 </em> n^2 + n<em> 中的 <strong>低阶项</strong>和 <strong>首项系数</strong>可得到 </em>f(n) = n^2*</p>
+<li><p>带标志位的冒泡排序  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 添加标志位的冒泡法</span></span><br><span class="line"><span class="comment"> * 如果数组有序，减少循环次数</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> arr</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">bobble_one</span><span class="params">(<span class="keyword">int</span>[] arr)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length - <span class="number">1</span>; i++) &#123;</span><br><span class="line">		<span class="keyword">boolean</span> flag = <span class="keyword">true</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; arr.length - i - <span class="number">1</span>; j++) &#123;</span><br><span class="line">			<span class="keyword">if</span> (arr[j] &gt; arr[j + <span class="number">1</span>]) &#123;</span><br><span class="line">				<span class="keyword">int</span> k = arr[j];</span><br><span class="line">				arr[j] = arr[j + <span class="number">1</span>];</span><br><span class="line">				arr[j + <span class="number">1</span>] = k;</span><br><span class="line">				flag = <span class="keyword">false</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">if</span> (flag) &#123;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>最后 <em>O(f(n)) = O(n^2)</em> 获得渐进时间复杂度, 简称时间复杂度</p>
-</li>
-<li><p>常用的时间复杂度有：O(1) &lt; O(log n) &lt; 0(n) &lt; O(n log n) &lt; O(n^2) &lt; O(2^n) &lt; O(n!) </p>
+<li><p>鸡尾酒排序（两端同时冒泡） </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 鸡尾酒冒泡</span></span><br><span class="line"><span class="comment"> * 头尾同时冒泡</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> arr</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">bobble_two</span><span class="params">(<span class="keyword">int</span>[] arr)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length / <span class="number">2</span>; i++) &#123;</span><br><span class="line">		<span class="keyword">boolean</span> flag = <span class="keyword">true</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = i; j &lt; arr.length - i - <span class="number">1</span>; j++) &#123;</span><br><span class="line">			<span class="keyword">if</span> (arr[j] &gt; arr[j + <span class="number">1</span>]) &#123;</span><br><span class="line">				<span class="keyword">int</span> k = arr[j];</span><br><span class="line">				arr[j] = arr[j + <span class="number">1</span>];</span><br><span class="line">				arr[j + <span class="number">1</span>] = k;</span><br><span class="line">				flag = <span class="keyword">false</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = arr.length - i - <span class="number">2</span>; j &gt; i; j--) &#123;</span><br><span class="line">			<span class="keyword">if</span> (arr[j] &gt; arr[j + <span class="number">1</span>]) &#123;</span><br><span class="line">				<span class="keyword">int</span> k = arr[j];</span><br><span class="line">				arr[j] = arr[j + <span class="number">1</span>];</span><br><span class="line">				arr[j + <span class="number">1</span>] = k;</span><br><span class="line">				flag = <span class="keyword">false</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">if</span> (flag) &#123;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 </li>
-<li><p><strong>空间复杂度：</strong> 是对一个算法在运行过程中临时占用(辅助)存储空间大小的量度，记做S(n)=O(f(n)),<br>与问题规模无关<br>空间复杂度的计算与时间复杂度相似，时间复杂度使用的是语句频度，空间复杂度使用的是辅助空间的大小<br><br>例如交换排序中常使用一个变量temp作为中间变量，空间复杂度为S(1)</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; n; j++) &#123;</span><br><span class="line">   <span class="keyword">if</span> (arr[i] &gt; arr[j]) &#123;</span><br><span class="line">       <span class="keyword">int</span> temp = arr[i];</span><br><span class="line">       arr[i] = arr[j];</span><br><span class="line">       arr[j] = temp;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p> 一般而言，时间和空间复杂度是可以进行一定的相互转换，</p>
-</li>
-<li><p><strong>递归</strong><br>时间复杂度：递归总次数 * 每次递归的次数<br>空间复杂度：递归的深度 * 每次递归所需要的辅助空间</p>
+<li><p>算法分析（只分析简单冒泡）</p>
+<ol>
+<li>稳定性：稳定，从前向后比较，因为符合 <code>arr[j] &gt; arr[j + 1]</code>进行交换，所以大小相同的数字不会交换前后位置</li>
+<li>时间复杂度：循环的次数为 <img src="../image/公式.png" alt="公式">，所以移动的次数为 <em>3n(n-1)/2</em>，所以时间复杂度为 <strong>O(n^2)</strong></li>
+<li>空间复杂度：使用的辅助空间只有int变量 k，所以辅助空间为 <strong>O(1)</strong></li>
+</ol>
 </li>
 </ol>
 
@@ -509,8 +500,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/06/07/Hexo/" rel="next" title="Hexo">
-                <i class="fa fa-chevron-left"></i> Hexo
+              <a href="/2018/06/07/排序算法/" rel="next" title="排序算法">
+                <i class="fa fa-chevron-left"></i> 排序算法
               </a>
             
           </div>
@@ -518,10 +509,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/06/11/冒泡排序/" rel="prev" title="冒泡排序">
-                冒泡排序 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -673,7 +660,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">排序</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text">排序算法的评估</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#交换排序：冒泡排序"><span class="nav-number">1.</span> <span class="nav-text">交换排序：冒泡排序</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#冒泡排序"><span class="nav-number">1.1.</span> <span class="nav-text">冒泡排序</span></a></li></ol></li></ol></div>
             
 
           </div>

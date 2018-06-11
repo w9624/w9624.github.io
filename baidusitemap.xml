@@ -4,6 +4,29 @@
 
     
   <url>
+    <loc>http://yoursite.com/2018/06/11/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</loc>
+    <lastmod>2018-06-11T13:02:45.317Z</lastmod>
+    <data>
+        <display>
+        <title>冒泡排序</title>
+        <pubTime>2018-06-11T10:29:00.000Z</pubTime>
+        
+        <tag>sort</tag>
+         
+         
+           
+             
+              <breadCrumb title="Algorithm" url="http://yoursite.com/categories/Algorithm/"/>
+          
+             
+              <breadCrumb title="sort" url="http://yoursite.com/categories/Algorithm/sort/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2018/06/07/Hexo/</loc>
     <lastmod>2018-06-07T14:37:47.218Z</lastmod>
     <data>
