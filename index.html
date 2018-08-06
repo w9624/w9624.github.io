@@ -337,6 +337,159 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/06/SpringDataREST/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wangrz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/header.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="残喘的理想">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/08/06/SpringDataREST/" itemprop="url">SpringDataREST</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-06T20:59:00+08:00">
+                2018-08-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Spring/" itemprop="url" rel="index">
+                    <span itemprop="name">Spring</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="Spring-Data-REST-SprringBoot"><a href="#Spring-Data-REST-SprringBoot" class="headerlink" title="Spring Data REST  (SprringBoot)"></a>Spring Data REST  (SprringBoot)</h4><p>REST即表述性状态传递（Representational State Transfer）：将资源的状态以最合适的形式在客户端和服务器之间转移。<br>使用上可以简单的理解为：Http定义操作，URL确定资源，从而完成对资源的处理<br>Spring Data REST 支持将Spring Data JPA等的repository自动转换为REST</p>
+<h6 id="两种配置方式："><a href="#两种配置方式：" class="headerlink" title="两种配置方式："></a>两种配置方式：</h6><ol>
+<li><p>继承RepositoryRestMvcConfigration  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">Configuration</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RestConfig</span></span>&#123;</span><br><span class="line">	<span class="meta">@Bean</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> RepositoryRestConfigurer <span class="title">repositoryRestConfigurer</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> RepositoryRestConfigurerAdapter() &#123;</span><br><span class="line">      <span class="meta">@Override</span></span><br><span class="line">      <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">configureRepositoryRestConfiguration</span><span class="params">(RepositoryRestConfiguration config)</span> </span>&#123;</span><br><span class="line">        config.setBasePath(<span class="string">"/api"</span>);</span><br><span class="line">        <span class="comment">//配置其他属性</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改application.properties  </p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">#暴漏资源的根路径</span><br><span class="line">spring.data.rest.base-path=/data</span><br><span class="line">#每页默认的size</span><br><span class="line">spring.data.rest.default-page-size=2</span><br><span class="line">#公开所有公用repository接口, 但考虑 @Repository注解 </span><br><span class="line">#spring.data.rest.detection-strategy=default </span><br><span class="line">#spring.data.rest.enable-enum-translation= </span><br><span class="line">## Enable enum value translation via the Spring Data REST default resource bundle.</span><br><span class="line">#spring.data.rest.limit-param-name=</span><br><span class="line">## Name of the URL query string parameter that indicates how many results to return at once.</span><br><span class="line">#spring.data.rest.max-page-size= 2</span><br><span class="line">## Maximum size of pages.</span><br><span class="line">#spring.data.rest.page-param-name= </span><br><span class="line">## Name of the URL query string parameter that indicates what page to return.</span><br><span class="line">#spring.data.rest.return-body-on-create= true</span><br><span class="line">## Return a response body after creating an entity.</span><br><span class="line">#spring.data.rest.return-body-on-update= true</span><br><span class="line">## Return a response body after updating an entity.</span><br><span class="line">#spring.data.rest.sort-param-name= name</span><br><span class="line"># Name of the URL query string parameter that indicates what direction to sort results.</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h6 id="创建实体类"><a href="#创建实体类" class="headerlink" title="创建实体类"></a>创建实体类</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Entity</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">	<span class="meta">@Id</span></span><br><span class="line">	<span class="meta">@GeneratedValue</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> id;</span><br><span class="line">	<span class="keyword">private</span> String name;</span><br><span class="line">	<span class="comment">//@JsonIgnore 忽略该字段</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> age;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">super</span>();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="实体类的Repository"><a href="#实体类的Repository" class="headerlink" title="实体类的Repository"></a>实体类的Repository</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">PersonRepository</span> <span class="keyword">extends</span> <span class="title">JpaRepository</span>&lt;<span class="title">Person</span>, <span class="title">Integer</span>&gt;</span>&#123;</span><br><span class="line">	<span class="meta">@RestResource</span>(path=<span class="string">"byName"</span>, rel=<span class="string">"byName"</span>, exported=<span class="keyword">true</span>)<span class="comment">//可指定访问路径, 和该方法是否公开</span></span><br><span class="line">	<span class="function">Person <span class="title">findByName</span><span class="params">(@Param(<span class="string">"name"</span>)</span> String name)</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="HTTP访问（chrome安装postman插件）"><a href="#HTTP访问（chrome安装postman插件）" class="headerlink" title="HTTP访问（chrome安装postman插件）"></a>HTTP访问（chrome安装postman插件）</h6><p><strong>GET：查找</strong><br><a href="http://localhost:8080/data/persons?page=1&amp;size=2&amp;sort=name,desc" target="_blank" rel="noopener">http://localhost:8080/data/persons?page=1&amp;size=2&amp;sort=name,desc</a><br>page:页数  size:每页的数量 sort:排序的字段和顺序<br><strong>POST：存储</strong><br><strong>PUT：更新</strong><br><strong>PUT：与put相似，但部分更新状态</strong><br><strong>DELETE：删除</strong>  </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/30/Ubuntu搭建个人网盘/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1360,7 +1513,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1371,7 +1524,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -1382,7 +1535,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
