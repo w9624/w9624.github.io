@@ -4,6 +4,52 @@
 
     
   <url>
+    <loc>http://yoursite.com/2018/08/12/%E6%8B%A9%E6%8E%92%E5%BA%8F/</loc>
+    <lastmod>2018-08-12T08:02:56.679Z</lastmod>
+    <data>
+        <display>
+        <title>选择排序</title>
+        <pubTime>2018-08-12T07:53:00.000Z</pubTime>
+        
+        <tag>sort</tag>
+         
+         
+           
+             
+              <breadCrumb title="Algorithm" url="http://yoursite.com/categories/Algorithm/"/>
+          
+             
+              <breadCrumb title="sort" url="http://yoursite.com/categories/Algorithm/sort/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2018/08/12/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/</loc>
+    <lastmod>2018-08-12T07:52:41.220Z</lastmod>
+    <data>
+        <display>
+        <title>快速排序</title>
+        <pubTime>2018-08-12T07:36:00.000Z</pubTime>
+        
+        <tag>sort</tag>
+         
+         
+           
+             
+              <breadCrumb title="Algorithm" url="http://yoursite.com/categories/Algorithm/"/>
+          
+             
+              <breadCrumb title="sort" url="http://yoursite.com/categories/Algorithm/sort/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2018/08/06/SpringDataREST/</loc>
     <lastmod>2018-08-06T13:03:59.759Z</lastmod>
     <data>

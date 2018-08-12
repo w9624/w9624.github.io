@@ -112,7 +112,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="sort," />
 
 
 
@@ -123,18 +123,20 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta name="keywords" content="Coding">
+<meta name="description" content="选择排序：简单选择排序 定义：排序序列的记录个数为n，i取0,2,…,n-2,从所有后n-i-1个记录中找出排序码最小的记录，与第i个记录交换，执行n-1趟 后就完成了记录序列的排序的过程 算法思想：简单的说，每次选个最小值放在未排序部分的前面，n-1次之后排好序 对于n的记录，此时的i=0是第一个记录的下标，假设最小值在k=i位置，遍历后n-i-1个元素和k位置元素比较将较小的值得下标记为k，可">
+<meta name="keywords" content="sort">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/05/28/hello-world/index.html">
+<meta property="og:title" content="选择排序">
+<meta property="og:url" content="http://yoursite.com/2018/08/12/择排序/index.html">
 <meta property="og:site_name" content="残喘的理想">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="选择排序：简单选择排序 定义：排序序列的记录个数为n，i取0,2,…,n-2,从所有后n-i-1个记录中找出排序码最小的记录，与第i个记录交换，执行n-1趟 后就完成了记录序列的排序的过程 算法思想：简单的说，每次选个最小值放在未排序部分的前面，n-1次之后排好序 对于n的记录，此时的i=0是第一个记录的下标，假设最小值在k=i位置，遍历后n-i-1个元素和k位置元素比较将较小的值得下标记为k，可">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-28T12:26:18.024Z">
+<meta property="og:image" content="http://nwuer.xyz/image/%E5%85%AC%E5%BC%8F.png">
+<meta property="og:updated_time" content="2018-08-12T08:02:56.679Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="选择排序">
+<meta name="twitter:description" content="选择排序：简单选择排序 定义：排序序列的记录个数为n，i取0,2,…,n-2,从所有后n-i-1个记录中找出排序码最小的记录，与第i个记录交换，执行n-1趟 后就完成了记录序列的排序的过程 算法思想：简单的说，每次选个最小值放在未排序部分的前面，n-1次之后排好序 对于n的记录，此时的i=0是第一个记录的下标，假设最小值在k=i位置，遍历后n-i-1个元素和k位置元素比较将较小的值得下标记为k，可">
+<meta name="twitter:image" content="http://nwuer.xyz/image/%E5%85%AC%E5%BC%8F.png">
 
 
 
@@ -164,13 +166,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/05/28/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/08/12/择排序/"/>
 
 
 
 
 
-  <title>Hello World | 残喘的理想</title>
+  <title>选择排序 | 残喘的理想</title>
   
 
 
@@ -337,7 +339,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/28/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/12/择排序/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="wangrz">
@@ -354,7 +356,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">选择排序</h1>
         
 
         <div class="post-meta">
@@ -366,8 +368,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-28T20:26:18+08:00">
-                2018-05-28
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-12T15:53:00+08:00">
+                2018-08-12
               </time>
             
 
@@ -376,6 +378,39 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Algorithm/" itemprop="url" rel="index">
+                    <span itemprop="name">Algorithm</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Algorithm/sort/" itemprop="url" rel="index">
+                    <span itemprop="name">sort</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -404,15 +439,74 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h4 id="选择排序：简单选择排序"><a href="#选择排序：简单选择排序" class="headerlink" title="选择排序：简单选择排序"></a>选择排序：简单选择排序</h4><ol>
+<li><strong>定义：</strong>排序序列的记录个数为n，i取0,2,…,n-2,从所有后n-i-1个记录中找出排序码最小的记录，与第i个记录交换，执行n-1趟 后就完成了记录序列的排序的过程</li>
+<li><strong>算法思想：</strong>简单的说，每次选个最小值放在<strong>未排序部分</strong>的前面，n-1次之后排好序<ol>
+<li>对于n的记录，此时的<em>i=0</em>是第一个记录的下标，假设最小值在<em>k=i</em>位置，遍历后<em>n-i-1</em>个元素和<em>k</em>位置元素比较将较小的值得下标记为<em>k</em>，可以找到n个元素最小值的下标<em>k</em>，交换位置<em>i</em>和<em>k</em>的值，将最小值放到<em>i</em>位置，并且i++</li>
+<li>重复n-1次上述步骤，将第<em>n-1</em>小的值放到位置<em>n-1</em>处，的得到升序序列</li>
+</ol>
+</li>
+<li><strong>算法步骤：</strong>给一个数字序列升序排列：48，33，32，55，84，9，33，40  <ol>
+<li>此时的<em>i=0</em>是第一个记录的下标，遍历后<em>n-i-1=7</em>个元素找到8个元素最小值的下标<em>k</em><br><em>48</em>(k)，33，32，55，84，9，33，40  //k=i=0<br>48，<em>33</em>(k)，32，55，84，9，33，40 //48 &gt; 33, k = 1<br>48，33，<em>32</em>(k)，55，84，9，33，40 //33 &gt; 32, k = 2<br>48，33，<em>32</em>(k)，55，84，9，33，40 //32 &lt; 55, k = 2<br>48，33，<em>32</em>(k)，55，84，9，33，40 //32 &lt; 84, k = 2<br>48，33，32，55，84，<em>9</em>(k)，33，40 //32 &gt; 9, k = 5<br>·······<br>48，33，32，55，84，<em>9</em>(k)，33，40 // k = 5  </li>
+<li>交换位置<em>i</em>和<em>k</em>的值，将最小值放到<em>i</em>位置，并且i++，重复步骤1<br>9，<em>33</em>(k)，32，55，84，48，33，40 // k = i = 1<br>重复步骤1可得：9，<em>32</em>(k)，33，55，84，48，33，40 // k = i = 1</li>
+<li>重复n-3次步骤2，可得到升序<br>9, 32, 33, 33, 40, 48, 55, 84</li>
+</ol>
+</li>
+<li><p><strong>算法实现</strong></p>
+<ol>
+<li><p>选择排序</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 选择排序</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> arr</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">select</span><span class="params">(<span class="keyword">int</span>[] arr)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length - <span class="number">1</span>; i++) &#123;</span><br><span class="line">			<span class="keyword">int</span> temp = i;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; arr.length; j++) &#123;</span><br><span class="line">				<span class="keyword">if</span> (arr[temp] &gt; arr[j]) &#123;</span><br><span class="line">					temp = j;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span> (i != temp) &#123;</span><br><span class="line">				Tools.swap(arr, i, temp);<span class="comment">//交换i和temp的位置的数字</span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>两端同同时开始的选择排序</p>
+<pre><code class="java"><span class="comment">/**</span>
+<span class="comment">* 头尾同时进行的选择排序</span>
+<span class="comment">* <span class="doctag">@param</span> arr</span>
+<span class="comment">*/</span>
+<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">select_one</span><span class="params">(<span class="keyword">int</span>[] arr)</span> </span>{
+
+<span class="keyword">int</span> len  = arr.length;
+
+<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length / <span class="number">2</span>; i++) {
+ <span class="comment">//初始化最大最小值下标</span>
+ <span class="keyword">int</span> min = i, max = i;
+ <span class="comment">//选出最小值和最大值</span>
+ <span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; arr.length - i; j++) {
+     <span class="keyword">if</span> (arr[min] &gt; arr[j]) {
+         min = j;
+     }
+     <span class="keyword">if</span> (arr[max] &lt; arr[j]) {
+         max = j;
+     }
+ }
+ <span class="comment">//交换数组的位置,交换的时候一定要注意位置问题，很多人因为没有区分位置所以出错</span>
+ <span class="keyword">if</span> (arr[max] == arr[min]) {  <span class="comment">//数组已经有序</span>
+     <span class="keyword">break</span>;
+ }<span class="keyword">else</span> {
+     <span class="keyword">if</span> (min == i &amp;&amp; max == len - i - <span class="number">1</span>) {  <span class="comment">//最大最小值位置正确</span>
+         <span class="keyword">continue</span>;
+     }<span class="keyword">else</span> <span class="keyword">if</span> (min == len - i - <span class="number">1</span> &amp;&amp; max == i) { <span class="comment">//交换最大和最小值的位置刚好对调</span>
+         Tools.swap(arr, min, max);
+     }<span class="keyword">else</span> <span class="keyword">if</span> (max == i) { <span class="comment">//最大值在最小值要移动到的位置</span>
+         Tools.swap(arr, len - i - <span class="number">1</span>, max);
+         Tools.swap(arr, i, min);
+     }<span class="keyword">else</span> {  <span class="comment">//最小值在最大值要移动到的位置和其他情况</span>
+         Tools.swap(arr, i, min);
+         Tools.swap(arr, len - i - <span class="number">1</span>, max);
+     }
+ }
+}
+}
+</code></pre>
+</li>
+</ol>
+</li>
+<li><strong>算法分析</strong>（基础的选择排序）<ol>
+<li>稳定性：不稳定， 有算法实现可知，选择最小的数字，然后位置对调，例如 ：<strong>33</strong>， 33，22<br>第一次排序：22, 33, <strong>33</strong><br>第二次排序：22，33，<strong>33</strong><br>两个33的前后顺序发生改变，一种简单的情况就是，当在数字序列中有相同的两个数字，并且第2个数字后面位置有比第一个小的数字，两个数字顺序改变</li>
+<li>时间复杂度：循环的次数为<img src="http://nwuer.xyz/image/%E5%85%AC%E5%BC%8F.png" alt="">，数字移动的次数为<em> 3n(n-1)/2</em>，时间复杂度为 <strong>O[n^2]</strong></li>
+<li>空间复杂度：使用的辅助空间只有临时变量 temp, 空间复杂度为 <strong>O[1]</strong></li>
+</ol>
+</li>
+</ol>
 
       
     </div>
@@ -428,6 +522,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/sort/" rel="tag"># sort</a>
+          
+        </div>
+      
 
       
       
@@ -437,15 +537,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/08/12/快速排序/" rel="next" title="快速排序">
+                <i class="fa fa-chevron-left"></i> 快速排序
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/28/article-title/" rel="prev" title="Strat my blog">
-                Strat my blog <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -597,7 +697,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#选择排序：简单选择排序"><span class="nav-number">1.</span> <span class="nav-text">选择排序：简单选择排序</span></a></li></ol></div>
             
 
           </div>
